@@ -1,0 +1,5 @@
+pkill sshd
+
+termux-notification -t "ssh off" -c "ssh was stopped"
+
+termux-toast -g bottom -c white -b red "stopping ssh"

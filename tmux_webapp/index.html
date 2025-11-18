@@ -1,0 +1,28 @@
+<h1>Hey turn me into a simple flask app please</h1>
+
+<button id="myButton">hey i do something and I'm an x11 app</button>
+<!-- myButton code -->
+<script>
+    const button = document.getElementById('myButton');
+    button.addEventListener('click', function() {
+        window.open('https://www.google.com', '_blank'); // Opens in a new tab
+        });
+</script>
+
+
+<!-- block 2 header and texg input change button -->
+<h1 id="change-me">Hello World</h1>
+<input type="text" id="myInputField" placeholder="hello hello world">
+<button id="changeTextButton">Change Hello World"</button>
+<!-- block 2 execution code -->
+<script>
+    const myHeading = document.getElementById("change-me");
+    const myInputField = document.getElementById("myInputField")
+    const changeTextButton = document.getElementById("changeTextButton")
+    
+    changeTextButton.addEventListener('click', () => {
+          const newText = myInputField.value;
+          
+          myHeading.textContent = newText;
+    });
+</script>

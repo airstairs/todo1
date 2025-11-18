@@ -1,0 +1,1 @@
+test element and function code next to each other with another button that changes another view element so try script tags if working right

@@ -1,0 +1,8 @@
+export XDG_RUNTIME_DIR=/data/data/com.termux/files/usr/tmp
+
+kill -9 $(pgrep -f "termux.x11") 2>/dev/null # Optional: Kill any existing X server process
+
+termux-x11 :0 >/dev/null &
+
+
+DISPLAY=:0 firefox
